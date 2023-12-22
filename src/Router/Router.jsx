@@ -1,6 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import Dashboard from '../Dashboard/Dashboard';
 import Main from '../Layout/Main';
+import Alltask from '../Page/Alltask';
 import Contact from '../Page/Contact';
 import CreateTask from '../Page/CreateTask';
 import Home from '../Page/Home';
@@ -45,6 +46,10 @@ export const Router = createBrowserRouter([
       {
         path:'task',
         element: <CreateTask></CreateTask>
+      },
+      {
+        path:'alltash',
+        element: <Alltask></Alltask>
       },
     ]
   }

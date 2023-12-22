@@ -12,7 +12,7 @@ const CreateTask = () => {
         name: data.name,
         deadline: data.deadline,
         description: data.description,
-
+        tags: data.tags,
       } 
       console.log(contestField);
       const contestPost = await axios.post('/addtask', contestField)
